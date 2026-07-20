@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500">
+
+<defs>
+
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#090014"/>
+<stop offset="45%" stop-color="#3b0764"/>
+<stop offset="100%" stop-color="#ec4899"/>
+</linearGradient>
+
+<filter id="glow">
+<feGaussianBlur stdDeviation="6" result="blur"/>
+<feMerge>
+<feMergeNode in="blur"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+
+</defs>
+
+
+<!-- Background -->
+<rect width="1500" height="500" fill="url(#bg)"/>
+
+
+<!-- Stars -->
+<g fill="white">
+<circle cx="100" cy="80" r="3"/>
+<circle cx="240" cy="140" r="2"/>
+<circle cx="430" cy="70" r="3"/>
+<circle cx="650" cy="120" r="2"/>
+<circle cx="900" cy="60" r="3"/>
+<circle cx="1100" cy="150" r="2"/>
+<circle cx="1320" cy="90" r="3"/>
+<circle cx="1450" cy="170" r="2"/>
+</g>
+
+
+<!-- Moon -->
+<circle cx="1250" cy="100" r="55" fill="white" opacity="0.9"/>
+<circle cx="1270" cy="85" r="55" fill="#3b0764"/>
+
+
+<!-- Mountains -->
+<polygon points="
+0,500 0,370 
+180,420 350,300 
+520,390 720,250 
+930,380 1150,270 
+1500,350 1500,500"
+fill="#12001f"/>
+
+
+<!-- AI Network Lines -->
+
+<g stroke="#ffffff" opacity="0.35" stroke-width="2">
+
+<line x1="1050" y1="250" x2="1200" y2="180"/>
+<line x1="1200" y1="180" x2="1350" y2="260"/>
+<line x1="1050" y1="250" x2="1350" y2="260"/>
+
+</g>
+
+
+<g fill="#fff">
+
+<circle cx="1050" cy="250" r="8"/>
+<circle cx="1200" cy="180" r="8"/>
+<circle cx="1350" cy="260" r="8"/>
+
+</g>
+
+
+<!-- Main Name -->
+
+<text 
+x="750"
+y="220"
+text-anchor="middle"
+font-size="90"
+font-family="Arial Black,Arial"
+fill="white"
+filter="url(#glow)">
+BHARAT
+</text>
+
+
+<!-- Subtitle -->
+
+<text
+x="750"
+y="300"
+text-anchor="middle"
+font-size="30"
+font-family="Segoe UI"
+fill="#ffffff">
+
+AI &amp; DATA SCIENCE • MACHINE LEARNING • OPEN SOURCE
+
+</text>
+
+
+<!-- Moving Text -->
+
+<text
+x="1500"
+y="430"
+font-size="38"
+font-family="Segoe UI"
+fill="white">
+
+Aspiring Data Analyst • B.Tech Artificial Intelligence &amp; Data Science • Open Source Contributor
+
+<animate 
+attributeName="x"
+from="1500"
+to="-1200"
+dur="15s"
+repeatCount="indefinite"/>
+
+</text>
+
+
+</svg>
